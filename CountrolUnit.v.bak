@@ -1,0 +1,16 @@
+module ControlUnit(
+		clk,
+		rst,
+		DinoPosHorFrom,
+		DinoPosHorTo,
+		DinoPosVerFrom,
+		DinoPosVerTo,
+		hudPosHorFrom,
+		hudPosHorTo,
+		hudPosVerFrom,
+		hudPosVerTo;
+
+)
+
+input rst,clk;
+input DinoPosHorFrom,DinoPosHorTo,DinoPosVerFrom,DinoPosVerTo,hudPosHorFrom,hudPosHorTo,hudPosVerFrom,hudPosVerTo;

@@ -1,0 +1,20 @@
+module Dino(
+	clk,
+	rst,
+	hor_reg,
+	ver_reg,
+	DinoPosHorFrom,
+	DinoPosHorTo,
+	DinoPosVerFrom,
+	DinoPosVerTo
+);
+
+input 
+	clk,
+	rst,
+	hor_reg,
+	ver_reg;
+output reg DinoPosHorFrom,DinoPosHorTo,DinoPosVerFrom,DinoPosVerTo;
+
+
+endmodule

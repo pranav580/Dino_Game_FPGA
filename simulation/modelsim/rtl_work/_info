@@ -1,0 +1,151 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Code\FPGA\Dino_Game\simulation\modelsim
+vControlUnit
+IjN>W=Mz<fL>SJ]7jNY1i12
+VdKF5bWPdggz>eSIEdIJ8A1
+Z1 dD:\Code\FPGA\Dino_Game\simulation\modelsim
+w1661337862
+8D:/Code/FPGA/Dino_Game/CountrolUnit.v
+FD:/Code/FPGA/Dino_Game/CountrolUnit.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/Code/FPGA/Dino_Game -O0
+n@control@unit
+!i10b 1
+!s100 FkcndKW:J^]6NY?QH[jdC3
+!s85 0
+!s108 1662446594.035000
+!s107 D:/Code/FPGA/Dino_Game/CountrolUnit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Code/FPGA/Dino_Game|D:/Code/FPGA/Dino_Game/CountrolUnit.v|
+!s101 -O0
+vDino
+I0i`9PmPVEHL]5I>mlTZ:@1
+VU[P@]4YM]GGbU2n?<Bf2b3
+R1
+w1662025242
+8D:/Code/FPGA/Dino_Game/Dino.v
+FD:/Code/FPGA/Dino_Game/Dino.v
+L0 1
+R2
+r1
+31
+R3
+n@dino
+R4
+!i10b 1
+!s100 mBGeX2l:9:P8I9QZ89Y8N0
+!s85 0
+!s108 1662446593.770000
+!s107 D:/Code/FPGA/Dino_Game/Dino.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Code/FPGA/Dino_Game|D:/Code/FPGA/Dino_Game/Dino.v|
+!s101 -O0
+vDinoData
+!i10b 1
+!s100 ZY1@MLA>foVKe_CMQeS6C1
+I2GKfbm3XaUEl?[m2dB06K0
+VOjBU7:elnNK]ZD5liFJYJ1
+R1
+w1661328155
+8D:/Code/FPGA/Dino_Game/DinoData.v
+FD:/Code/FPGA/Dino_Game/DinoData.v
+L0 39
+R2
+r1
+!s85 0
+31
+!s108 1662446594.285000
+!s107 D:/Code/FPGA/Dino_Game/DinoData.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Code/FPGA/Dino_Game|D:/Code/FPGA/Dino_Game/DinoData.v|
+!s101 -O0
+R3
+R4
+n@dino@data
+vHuddle
+IPG6gR<VIlgTD<Xd>leEWO0
+Vm9_CRLLC`>f3^<I2E>fSd1
+R1
+w1661157468
+8D:/Code/FPGA/Dino_Game/Huddle.v
+FD:/Code/FPGA/Dino_Game/Huddle.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@huddle
+!i10b 1
+!s100 Sa`AbeUdG`PDRVzNm0Gn31
+!s85 0
+!s108 1662446593.848000
+!s107 D:/Code/FPGA/Dino_Game/Huddle.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Code/FPGA/Dino_Game|D:/Code/FPGA/Dino_Game/Huddle.v|
+!s101 -O0
+vMain
+I]l:a6>X2cfioKJ1gA;1Hn1
+VZ<`_]BaLmD7i:S]mK1aBX3
+R1
+w1662024427
+8D:/Code/FPGA/Dino_Game/Main.v
+FD:/Code/FPGA/Dino_Game/Main.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@main
+!i10b 1
+!s100 @9e4PLVh__nij<?FS6[KW0
+!s85 0
+!s108 1662446594.113000
+!s107 D:/Code/FPGA/Dino_Game/Main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Code/FPGA/Dino_Game|D:/Code/FPGA/Dino_Game/Main.v|
+!s101 -O0
+vScore
+IL]Z7_bOe]g92egdF^9jaP2
+VR8XGgkiGC46<nk6<bl5mG1
+R1
+w1661236981
+8D:/Code/FPGA/Dino_Game/Score.v
+FD:/Code/FPGA/Dino_Game/Score.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@score
+!i10b 1
+!s100 AYTZ>K:XGcd0BzIgW1NUW3
+!s85 0
+!s108 1662446594.191000
+!s107 D:/Code/FPGA/Dino_Game/Score.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Code/FPGA/Dino_Game|D:/Code/FPGA/Dino_Game/Score.v|
+!s101 -O0
+vspace
+I1nGYf>=5N_JS;NCHzfQNe3
+V]<3fJdFzMUn996S<Fhf6j1
+R1
+w1661150118
+8D:/Code/FPGA/Dino_Game/Space.v
+FD:/Code/FPGA/Dino_Game/Space.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 m1X_gkdiH:z?4;5gU?fk^1
+!s85 0
+!s108 1662446593.957000
+!s107 D:/Code/FPGA/Dino_Game/Space.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Code/FPGA/Dino_Game|D:/Code/FPGA/Dino_Game/Space.v|
+!s101 -O0

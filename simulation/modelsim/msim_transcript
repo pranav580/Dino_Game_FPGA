@@ -1,0 +1,85 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Dino_Game_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/Code/FPGA/Dino_Game {D:/Code/FPGA/Dino_Game/Dino.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Dino
+# 
+# Top level modules:
+# 	Dino
+# vlog -vlog01compat -work work +incdir+D:/Code/FPGA/Dino_Game {D:/Code/FPGA/Dino_Game/Huddle.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Huddle
+# 
+# Top level modules:
+# 	Huddle
+# vlog -vlog01compat -work work +incdir+D:/Code/FPGA/Dino_Game {D:/Code/FPGA/Dino_Game/Space.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module space
+# 
+# Top level modules:
+# 	space
+# vlog -vlog01compat -work work +incdir+D:/Code/FPGA/Dino_Game {D:/Code/FPGA/Dino_Game/CountrolUnit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# vlog -vlog01compat -work work +incdir+D:/Code/FPGA/Dino_Game {D:/Code/FPGA/Dino_Game/Main.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Main
+# 
+# Top level modules:
+# 	Main
+# vlog -vlog01compat -work work +incdir+D:/Code/FPGA/Dino_Game {D:/Code/FPGA/Dino_Game/Score.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Score
+# 
+# Top level modules:
+# 	Score
+# vlog -vlog01compat -work work +incdir+D:/Code/FPGA/Dino_Game {D:/Code/FPGA/Dino_Game/DinoData.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module DinoData
+# 
+# Top level modules:
+# 	DinoData
+# 
+vsim work.Dino
+# vsim work.Dino 
+# Loading work.Dino
+# Loading work.DinoData
+# ** Error: (vsim-3033) D:/Code/FPGA/Dino_Game/DinoData.v(81): Instantiation of 'altsyncram' failed. The design unit was not found.
+# 
+#         Region: /Dino/U6
+#         Searched libraries:
+#             D:/Code/FPGA/Dino_Game/simulation/modelsim/rtl_work
+# Error loading design
+vsim -voptargs=+acc work.Dino
+# vsim -voptargs=+acc work.Dino 
+# Loading work.Dino
+# Loading work.DinoData
+# ** Error: (vsim-3033) D:/Code/FPGA/Dino_Game/DinoData.v(81): Instantiation of 'altsyncram' failed. The design unit was not found.
+# 
+#         Region: /Dino/U6
+#         Searched libraries:
+#             D:/Code/FPGA/Dino_Game/simulation/modelsim/rtl_work
+# Error loading design
+vsim -voptargs=+acc work.Dino
+# vsim -voptargs=+acc work.Dino 
+# Loading work.Dino
+# Loading work.DinoData
+# ** Error: (vsim-3033) D:/Code/FPGA/Dino_Game/DinoData.v(81): Instantiation of 'altsyncram' failed. The design unit was not found.
+# 
+#         Region: /Dino/U6
+#         Searched libraries:
+#             D:/Code/FPGA/Dino_Game/simulation/modelsim/rtl_work
+# Error loading design

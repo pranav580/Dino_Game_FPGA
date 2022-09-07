@@ -1,0 +1,4 @@
+module Main(clk,rst,in);
+
+input clk,rst;
+

@@ -1,0 +1,17 @@
+module Huddle(
+	clk,
+	rst,
+	hor_reg,
+	ver_reg,
+	hudPosHorFrom,hudPosHorTo,hudPosVerFrom,hudPosVerTo
+);
+
+input 
+	clk,
+	rst,
+	hor_reg,
+	ver_reg;
+output reg hudPosHorFrom,hudPosHorTo,hudPosVerFrom,hudPosVerTo;
+
+
+endmodule

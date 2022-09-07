@@ -1,0 +1,3 @@
+module Score(clk,rst,BreakFlag)
+
+input clk,rst;
