@@ -1,5 +1,5 @@
 Assembler report for Dino_Game
-Tue Sep 06 19:48:51 2022
+Wed Sep 07 13:02:15 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,7 +10,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/Code/FPGA/Dino_Game/output_files/Dino_Game.sof
+  5. Assembler Device Options: C:/Users/Pranav/Desktop/Dino_Game_FPGA/output_files/Dino_Game.sof
   6. Assembler Messages
 
 
@@ -37,7 +37,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Sep 06 19:48:51 2022 ;
+; Assembler Status      ; Successful - Wed Sep 07 13:02:15 2022 ;
 ; Revision Name         ; Dino_Game                             ;
 ; Top-level Entity Name ; Main                                  ;
 ; Family                ; Cyclone III                           ;
@@ -77,24 +77,24 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------+
-; Assembler Generated Files                         ;
-+---------------------------------------------------+
-; File Name                                         ;
-+---------------------------------------------------+
-; D:/Code/FPGA/Dino_Game/output_files/Dino_Game.sof ;
-+---------------------------------------------------+
++-------------------------------------------------------------------+
+; Assembler Generated Files                                         ;
++-------------------------------------------------------------------+
+; File Name                                                         ;
++-------------------------------------------------------------------+
+; C:/Users/Pranav/Desktop/Dino_Game_FPGA/output_files/Dino_Game.sof ;
++-------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------+
-; Assembler Device Options: D:/Code/FPGA/Dino_Game/output_files/Dino_Game.sof ;
-+----------------+------------------------------------------------------------+
-; Option         ; Setting                                                    ;
-+----------------+------------------------------------------------------------+
-; Device         ; EP3C16F484C6                                               ;
-; JTAG usercode  ; 0x000E9295                                                 ;
-; Checksum       ; 0x000E9295                                                 ;
-+----------------+------------------------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Pranav/Desktop/Dino_Game_FPGA/output_files/Dino_Game.sof ;
++----------------+----------------------------------------------------------------------------+
+; Option         ; Setting                                                                    ;
++----------------+----------------------------------------------------------------------------+
+; Device         ; EP3C16F484C6                                                               ;
+; JTAG usercode  ; 0x000F10BF                                                                 ;
+; Checksum       ; 0x000F10BF                                                                 ;
++----------------+----------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -103,13 +103,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Sep 06 19:48:50 2022
+    Info: Processing started: Wed Sep 07 13:02:14 2022
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Dino_Game -c Dino_Game
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4542 megabytes
-    Info: Processing ended: Tue Sep 06 19:48:51 2022
+    Info: Peak virtual memory: 4550 megabytes
+    Info: Processing ended: Wed Sep 07 13:02:15 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

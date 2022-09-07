@@ -33,19 +33,19 @@ always @(posedge clk or negedge rst)
 				DinoPosVerFrom <= 7'd0;
 				DinoPosVerTo   <= 7'd0;
 			end
-//		else if(SpaceFlag == 1'd1)
-//			begin
-//				DinoPosHorFrom <= 12'd150;
-//				DinoPosHorTo <= 12'd181;
-//				DinoPosVerFrom <= 12'd150;
-//				DinoPosVerTo <= 12'd221;
-//			end
+		else if(SpaceFlag == 1'd1)
+			begin
+				DinoPosHorFrom <= 12'd150;
+				DinoPosHorTo <= 12'd181;
+				DinoPosVerFrom <= 12'd150;
+				DinoPosVerTo <= 12'd221;
+			end
 		else
 			begin
-				DinoPosHorFrom <= 7'd10;
-				DinoPosHorTo   <= 7'd41;
-				DinoPosVerFrom <= 7'd10;
-				DinoPosVerTo   <= 7'd81;
+				DinoPosHorFrom <= 7'd160;
+				DinoPosHorTo   <= 7'd191;
+				DinoPosVerFrom <= 7'd160;
+				DinoPosVerTo   <= 7'd231;
 			end
 	end	
 	
