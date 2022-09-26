@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Sep 07 13:02:04 2022
+Analysis & Synthesis Status : Successful - Thu Sep 22 15:07:18 2022
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Dino_Game
 Top-level Entity Name : Main
 Family : Cyclone III
-Total logic elements : 179
-    Total combinational functions : 142
-    Dedicated logic registers : 102
-Total registers : 102
-Total pins : 10
+Total logic elements : 274
+    Total combinational functions : 235
+    Dedicated logic registers : 139
+Total registers : 139
+Total pins : 11
 Total virtual pins : 0
-Total memory bits : 8,398
+Total memory bits : 24,838
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

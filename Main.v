@@ -4,7 +4,7 @@ module Main(clk,
         VGA_GREEN,
         VGA_BLUE,
         VGA_HS,
-        VGA_VS,KBclk,KBin,q
+        VGA_VS,KBclk,KBin,q,qtree1
 );
 
 input clk,rst,KBclk,KBin;
@@ -13,7 +13,7 @@ output VGA_GREEN;
 output VGA_BLUE;
 output VGA_HS;
 output VGA_VS;
-output [0:0] q;
+output [0:0] q,qtree1;
 /* Internal registers for horizontal signal timing */
 reg [10:0] hor_reg; // to count 1040 different values up to 1039
 reg hor_sync;
@@ -31,7 +31,7 @@ wire [11:0] DinoPosHorFrom,DinoPosHorTo,DinoPosVerFrom,DinoPosVerTo,
 	ControlUnit U1(clk,rst,hor_reg,ver_reg,DinoPosHorFrom,DinoPosHorTo,DinoPosVerFrom,DinoPosVerTo,
 		hudPosHorFrom,hudPosHorTo,hudPosVerFrom,hudPosVerTo,scoreHorFrom,scoreHorTo,scoreVerFrom,scoreVerTo,
 		KBclk,KBin,
-		q
+		q,qtree1
 );
    
 	// Code
@@ -91,16 +91,16 @@ always @(posedge clk or negedge rst)
 				green <= 1'd0;
 				blue <= 1'd0;
 			end	
-      else if (hor_reg >= DinoPosHorFrom && hor_reg <= DinoPosHorTo && ver_reg >= DinoPosVerFrom && ver_reg <= DinoPosVerTo && (q==1'b1)) 
-			begin
-				red <= 1;
-				green <= 1;
-				blue <= 1;
-			end 
-		else if (hor_reg >= hudPosHorFrom && hor_reg <= hudPosHorTo && ver_reg >= hudPosVerFrom && ver_reg <= hudPosVerTo) 
+      else if (hor_reg >= DinoPosHorFrom && hor_reg <= DinoPosHorTo && ver_reg >= DinoPosVerFrom && ver_reg <= DinoPosVerTo && (q)) 
 			begin
 				red <= 1;
 				green <= 0;
+				blue <= 0;
+			end 
+		else if (hor_reg >= hudPosHorFrom && hor_reg <= hudPosHorTo && ver_reg >= hudPosVerFrom && ver_reg <= hudPosVerTo && (qtree1)) 
+			begin
+				red <= 0;
+				green <= 1;
 				blue <= 0;
 			end 
 		else if (hor_reg >= scoreHorFrom && hor_reg <= scoreHorTo && ver_reg >= scoreVerFrom && ver_reg <= scoreVerTo) 

@@ -23,29 +23,60 @@ output reg [12:0] DinoPosHorFrom,DinoPosHorTo,DinoPosVerFrom,DinoPosVerTo;
 DInoData U6(address,clk,DinoImg0);
 DInoData1 U7(address_counter,clk,DinoImg1);
 
+reg [12:0] hor_counter,ver_counter;
 
 always @(posedge clk or negedge rst)
 	begin
 		if(!rst)
 			begin
-				DinoPosHorFrom <= 7'd0;
-				DinoPosHorTo   <= 7'd0;
-				DinoPosVerFrom <= 7'd0;
-				DinoPosVerTo   <= 7'd0;
+				hor_counter <= 1'd0;
 			end
-		else if(SpaceFlag == 1'd1)
+		else if(hor_reg >= DinoPosHorFrom && hor_reg <= DinoPosHorTo && hor_counter == 12'd32)
 			begin
-				DinoPosHorFrom <= 12'd150;
-				DinoPosHorTo <= 12'd181;
-				DinoPosVerFrom <= 12'd150;
-				DinoPosVerTo <= 12'd221;
+				hor_counter <= 1'd0;
+			end
+		else
+			hor_counter <= hor_counter + 1;
+	end
+	
+always @(posedge clk or negedge rst)
+	begin
+		if(!rst)
+			begin
+				ver_counter <= 1'd0;
+			end
+		else if(ver_counter == 12'd71)
+			ver_counter <= 1'd0;
+		else if(hor_reg >= DinoPosHorFrom && hor_reg <= DinoPosHorTo && hor_counter == 12'd32)
+			begin
+				ver_counter <= ver_counter + 1;
+			end
+		else 
+			ver_counter <= ver_counter;
+	end
+
+always @(posedge clk or negedge rst)
+	begin
+		if(!rst)
+			begin
+				DinoPosHorFrom <= 12'd100;
+				DinoPosHorTo   <= 12'd131;
+				DinoPosVerFrom <= 12'd480;
+				DinoPosVerTo   <= 12'd551;
+			end
+		else if(SpaceFlag == 1'd1 )
+			begin
+				DinoPosHorFrom <= 12'd100; 
+				DinoPosHorTo   <= 12'd131;
+				DinoPosVerFrom <= 12'd480;
+				DinoPosVerTo   <= 12'd551;
 			end
 		else
 			begin
-				DinoPosHorFrom <= 7'd160;
-				DinoPosHorTo   <= 7'd191;
-				DinoPosVerFrom <= 7'd160;
-				DinoPosVerTo   <= 7'd231;
+				DinoPosHorFrom <= 12'd100;
+				DinoPosHorTo   <= 12'd131;
+				DinoPosVerFrom <= 12'd280;
+				DinoPosVerTo   <= 12'd351;
 			end
 	end	
 	

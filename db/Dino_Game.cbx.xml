@@ -3,5 +3,6 @@
 	<PROJECT NAME="Dino_Game">
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|ControlUnit:U1|Dino:U3|DInoData1:U7|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ak91.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|ControlUnit:U1|Dino:U3|DInoData:U6|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_pi91.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Main|ControlUnit:U1|Huddle:U2|tree1:U1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ti91.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
